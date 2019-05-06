@@ -1,7 +1,5 @@
 package main;
 
-import implementaciones.Delantero;
-
 public class DelanteroFactory {
 
 	public static Jugador obtenerDelantero() {
@@ -10,6 +8,7 @@ public class DelanteroFactory {
 		String rutaclassDelantero = "implementacionesVx2.Delantero";
 		
 		Jugador delantero = null;
+		@SuppressWarnings("rawtypes")
 		Class classDelantero = null;
 		
 		try {
